@@ -1,7 +1,10 @@
 @media (max-width: 767px) {
+  section {
+    min-width: 480px;
+  }
   .box {
     display: inline-block;
-    width: 49.1%;
+    width: 235px;
     height: 248px;
     line-height: 250px;
   }
