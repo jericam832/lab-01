@@ -1,24 +1,19 @@
 @media (max-width: 767px) {
   section {
-    min-width: 480px;
+    min-width: 478px;
   }
   .box {
     display: inline-block;
     width: 235px;
-    height: 248px;
+    height: 249px;
     line-height: 250px;
   }
-  div {
-    border: 1px solid #999;
-    vertical-align: middle;
-    background-color: #eee;
-  }
   .rect {
-    height: 123px;
+    height: 124px;
     line-height: 125px;
   }
   #heading {
-    height: 73px;
+    height: 74px;
     line-height: 75px;
   }
   #aside {
