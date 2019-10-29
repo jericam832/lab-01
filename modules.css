@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  #smaller > div:nth-child(1) {
+    float: left;
+  }
+  #smaller > div:nth-child(2) {
+    float: right;
+  }
+  div {
+    border: 1px solid red;
+    vertical-align: middle;
+    background-color: #eee;
+  }
+}
