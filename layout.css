@@ -1,70 +1,148 @@
-@media (max-width: 767px) {
-  section {
-    min-width: 478px;
+/* Mobile View */
+@media (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "smaller"
+    "section"
+    "footer";
+  }
+  #section {
+    grid-area: section;
+    overflow: hidden;
+    width: 480px;
   }
   .box {
     display: inline-block;
-    width: 235px;
-    height: 249px;
+    /* grid-row: auto; */
+    width: 146px;
+    height: 250px;
     line-height: 250px;
   }
   .rect {
-    height: 124px;
+    height: 125px;
     line-height: 125px;
   }
   #heading {
-    height: 74px;
+    grid-area: header;
+    height: 75px;
     line-height: 75px;
   }
   #aside {
-    height: 148px;
+    grid-area: aside;
+    height: 150px;
     line-height: 150px;
   }
-  footer div {
-    clear: both;
-    height: 78px;
-    line-height: 80px;
+  footer {
+    grid-area: footer;
+    height: 80px;
+    line-height: 100px;
   }
 
 }
+/* Tablet View */
 
-@media (min-width: 768px) {
-  section {
-    min-width: 760px;
+@media (max-width: 767px) {
+   .wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "smaller"
+    "section"
+    "footer";
+  }
+  #section {
+    grid-area: section;
+    float: left;  
   }
   .box {
-    float: left;    
-    width: 187.6px;
-    height: 248px;
+    width: 146px;
+    height: 250px;
     line-height: 250px;
-    margin: 0px;
-    padding: 0px;
   }
   #smaller {
-    min-width: 758px;
+    grid-area: smaller;
+    width: 600px;
   }
   .rect {
-    height: 198px;
-    min-width: 377.3px;
-    line-height: 200px;
+    height: 150px;
+    min-width: 309.5px;
+    line-height: 150px;
   }
 
   #heading {
-    max-width: 958px;
-    height: 98px;
+    grid-area: header;
+    height: 100px;
     line-height: 100px;
   }
   #aside {
-    float: left;
-    width: 198px;
-    height: 599px;
+    grid-area: aside;
+    height: 600px;
+    line-height: 150px;
+  }
+   footer {
+    grid-area: footer;
+    height: 80px;
+    line-height: 100px;
+  }
+
+}
+/* Desktop View */
+@media (min-width: 768px) {
+  #heading {
+    grid-area: header;
+    width: 960px;
+    height: 100px;
+    line-height: 100px;
+  }
+  #aside {
+    grid-area: aside;
+    width: 200px;
+    height: 600px;
     line-height: 600px;
   }
-  footer div {
-    float: right;
-    height: 148px;
-    width: 758px;
+  #smaller {
+    grid-area: smaller;
+    width: 760px;
+  }
+  .rect {
+    height: 200px;
+    min-width: 375.5px;
+    line-height: 200px;
+  }
+  #section {
+    /* width: 960px; */
+    grid-area: section;
+  }
+  .box {
+    grid-row: auto;
+    height: 250px;
+    line-height: 250px;
+    margin: 0px;
+    padding: 0px;
+  }  
+  footer {
+    grid-area: footer;
+    height: 150px;
+    width: 600px;
     line-height: 150px;
+  }
+  .wrapper {
+    /* display: grid; */
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "header header"
+    "aside smaller"
+    "aside section"
+    "aside footer";
+    background-color: #2196F3;
+    /* grid-gap: 10px; */
+
   }
 
 }
