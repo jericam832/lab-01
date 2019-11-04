@@ -1,29 +1,66 @@
-@media (max-width: 767px) {
-  div {
-    border: 1px solid black;
+@media (max-width: 600px) {
+  div, footer {
+    border: 2px dotted black;
     vertical-align: middle;
   }
   .box {
-    background-color: dodgerblue;
+    background-color: white;
   }
   .rect {
+    background-color: orange;
+  }
+  #heading {
     background-color: violet;
+  }
+  footer {
+    background-color: blue;
+  }
+  #aside {
+    background-color: yellow;
+  }
+}
+@media (min-width: 601px) {
+  div, footer {
+    border: 2px dashed black;
+    vertical-align: middle;
+  }
+  .box {
+    background-color: orange;
+  }
+  .rect {
+    background-color: green;
+  }
+  #heading {
+    background-color: gray;
+  }
+  footer {
+    background-color: red;
+  }
+  #aside {
+    background-color: pink;
+  }
+}
+
+@media (min-width: 768px) {
+  div, footer {
+    border: 1px solid red;
+    vertical-align: middle;
+    background-color: #999;
+  }
+  .box {
+    background-color: white;
+  }
+  .rect {
+    background-color: black;
+    color: white;
   }
   #heading {
     background-color: yellow;
   }
   footer {
-    background-color: orange;
+    background-color: red;
   }
   #aside {
-    background-color: peachpuff;
-  }
-}
-
-@media (min-width: 768px) {
-  div {
-    border: 1px solid red;
-    vertical-align: middle;
-    background-color: #999;
+    background-color: blue;
   }
 }
