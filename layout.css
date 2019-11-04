@@ -1,0 +1,70 @@
+@media (max-width: 767px) {
+  section {
+    min-width: 478px;
+  }
+  .box {
+    display: inline-block;
+    width: 235px;
+    height: 249px;
+    line-height: 250px;
+  }
+  .rect {
+    height: 124px;
+    line-height: 125px;
+  }
+  #heading {
+    height: 74px;
+    line-height: 75px;
+  }
+  #aside {
+    height: 148px;
+    line-height: 150px;
+  }
+  footer div {
+    clear: both;
+    height: 78px;
+    line-height: 80px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  section {
+    min-width: 760px;
+  }
+  .box {
+    float: left;    
+    width: 187.6px;
+    height: 248px;
+    line-height: 250px;
+    margin: 0px;
+    padding: 0px;
+  }
+  #smaller {
+    min-width: 758px;
+  }
+  .rect {
+    height: 198px;
+    min-width: 377.3px;
+    line-height: 200px;
+  }
+
+  #heading {
+    max-width: 958px;
+    height: 98px;
+    line-height: 100px;
+  }
+  #aside {
+    float: left;
+    width: 198px;
+    height: 599px;
+    line-height: 600px;
+  }
+  footer div {
+    float: right;
+    height: 148px;
+    width: 758px;
+    line-height: 150px;
+  }
+
+}
